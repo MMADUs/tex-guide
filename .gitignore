@@ -1,0 +1,13 @@
+# matrix
+matrix.aux
+matrix.fdb_latexmk
+matrix.fls
+matrix.log
+matrix.synctex.gz
+
+# tutorial
+tutorial.aux
+tutorial.fdb_latexmk
+tutorial.fls
+tutorial.log
+tutorial.synctex.gz

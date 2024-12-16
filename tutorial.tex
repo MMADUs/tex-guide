@@ -1,0 +1,87 @@
+% define the document type
+% like article, report, book, etc.
+\documentclass{article}
+
+% use a math formatting package
+\usepackage{amsmath}
+
+% title of the document
+\title{My First LaTeX Document}
+% author of the document
+\author{Your Name}
+% set the date on document (today for ex)
+\date{\today}
+
+% start of the document content
+% any content is written inside the document section
+\begin{document}
+
+% the \maketitle is mandatory
+% used to generate the header metadata
+% such as the title, author, and date.
+\maketitle
+
+% the \section used to make a new content section
+% creates a new given section title
+% the section number will be auto-incremented
+% ex:
+% 1. section one
+% 2. section two
+% any content inside the \section
+% will be the part of the section content
+\section{Introduction}
+
+This is my first document in \LaTeX{}. I can write text here and format it easily.
+
+% similiar to \section but this generates the sub part
+% the number format ex:
+% 1.1 sub one
+% 1.2 sub two
+\subsection{Why Use LaTeX?}
+LaTeX is great for:
+
+% the itemsize is used to create bullet points
+% such of making a list of items
+\begin{itemize}
+    \item Writing academic papers
+    \item Creating mathematical equations
+    \item Formatting text professionally
+\end{itemize}
+
+\section{Mathematics in LaTeX} % Another section
+LaTeX makes it easy to write equations. For example:
+
+\[
+E = mc^2
+\]
+
+Here's an inline equation: \( a^2 + b^2 = c^2 \).
+
+\section*{Matrix Example}
+
+Here is a simple \( 3 \times 3 \) matrix:
+
+\[
+A =
+\begin{pmatrix} % bmatrix creates brackets around the matrix
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{pmatrix}
+\]
+
+This is an inline equation: \( a^2 + b^2 = c^2 \).
+	
+
+You can also create a matrix without brackets:
+
+\[
+B =
+\begin{matrix} % Simple matrix with no brackets
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{matrix}
+\]
+
+\end{document} % End of the document
